@@ -1,6 +1,7 @@
 apiVersion: v2
 name: statsd
 description: a simple chart to deploy statsd to a cluster
+home: https://github.com/keyporttech/helm-statsd
 
 # A chart can be either an 'application' or a 'library' chart.
 #
