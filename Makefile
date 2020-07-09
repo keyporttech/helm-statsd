@@ -61,7 +61,7 @@ publish-public-repository:
 	./releaseChart.sh $(CHART) $(VERSION) .;
 .PHONY: publish-public-repository
 
-deploy: #publish-local-registry publish-public-repository
+deploy: publish-local-registry publish-public-repository
 	rm -rf /tmp/helm-$(CHART)
 	git clone git@github.com:keyporttech/helm-$(CHART).git /tmp/helm-$(CHART)
 	cd /tmp/helm-$(CHART) && git remote add downstream ssh://git@git.keyporttech.com:30222/keyporttech/helm-$(CHART).git
