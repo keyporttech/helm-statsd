@@ -10,7 +10,6 @@ helm install my-release keyporttech/statsd
 ```
 
 or
-
 ```bash
 git clone https://github.com/keyporttech/helm-statsd
 cd stsatsd_helm_chart
