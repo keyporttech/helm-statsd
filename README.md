@@ -8,7 +8,9 @@ This is a simple helm chart that deploys a statsd container on a kubernetes clus
 helm repo add keyporttech https://keyporttech.github.io/helm-charts/
 helm install my-release keyporttech/statsd
 ```
+
 or
+
 ```bash
 git clone https://github.com/keyporttech/helm-statsd
 cd stsatsd_helm_chart
