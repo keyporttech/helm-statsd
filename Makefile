@@ -59,7 +59,7 @@ publish-public-repository:
 	helm package .;
 	curl -o releaseChart.sh https://raw.githubusercontent.com/keyporttech/helm-charts/master/scripts/releaseChart.sh; \
 	chmod +x releaseChart.sh; \
-	./releaseChart.sh $(CHART) $(VERSION) .;
+	./releaseChart.sh $(CHART) $(VERSION) $(CWD);
 .PHONY: publish-public-repository
 
 deploy: publish-local-registry publish-public-repository
