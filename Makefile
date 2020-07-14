@@ -63,7 +63,6 @@ publish-public-repository:
 .PHONY: publish-public-repository
 
 deploy: publish-local-registry publish-public-repository
-	ssh-keyscan -H git.keyporttech.com:30222 >> ~/.ssh/known_hosts
 	rm -rf /tmp/helm-$(CHART)
 	rm -rf helm-charts
 	git clone git@github.com:keyporttech/helm-$(CHART).git /tmp/helm-$(CHART)
