@@ -2,7 +2,11 @@
 
 This is a simple helm chart that deploys a statsd container on a kubernetes cluster.
 
-## quick start
+## Prerequisites
+
+* [yq](https://github.com/mikefarah/yq) - a lightweight and portable command-line YAML processor
+
+## Quick start
 
 ```bash
 helm repo add keyporttech https://keyporttech.github.io/helm-charts/
