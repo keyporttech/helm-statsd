@@ -8,8 +8,8 @@ spec:
   type: {{ .Values.service.type }}
   ports:
     - port: {{ .Values.service.port }}
-      targetPort: http
-      protocol: TCP
-      name: http
+      targetPort: statsd
+      protocol: UDP
+      name: statsd
   selector:
     {{- include "statsd.selectorLabels" . | nindent 4 }}
